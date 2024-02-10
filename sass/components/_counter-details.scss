@@ -1,0 +1,23 @@
+#counter-details {
+    background-color: $primary;
+    color: $web-white;
+    .box {
+        text-align: center;
+    }
+    h3 {
+        font-size: 39px;
+        font-weight: bold;
+        margin: 0px;
+    }
+    .icon {
+        margin: 10px 0px;
+        i {
+            padding: 8px;
+            background: $web-white;
+            color: $primary;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+    }
+}
