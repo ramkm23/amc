@@ -1,0 +1,7 @@
+[22-Jul-2023 06:33:43 America/Chicago] PHP Warning:  Undefined array key "name" in /home2/thebh9p3/news4nation.in/cwt/process.php on line 4
+[22-Jul-2023 06:33:43 America/Chicago] PHP Warning:  Undefined array key "email" in /home2/thebh9p3/news4nation.in/cwt/process.php on line 5
+[22-Jul-2023 06:33:43 America/Chicago] PHP Warning:  Undefined array key "phone" in /home2/thebh9p3/news4nation.in/cwt/process.php on line 6
+[22-Jul-2023 06:33:43 America/Chicago] PHP Warning:  Undefined array key "message" in /home2/thebh9p3/news4nation.in/cwt/process.php on line 7
+[22-Jul-2023 07:15:39 America/Chicago] PHP Parse error:  syntax error, unexpected identifier "Thanks", expecting "," or ";" in /home2/thebh9p3/news4nation.in/cwt/process.php on line 12
+[22-Jul-2023 07:16:55 America/Chicago] PHP Parse error:  syntax error, unexpected identifier "Thanks", expecting "," or ";" in /home2/thebh9p3/news4nation.in/cwt/process.php on line 12
+[22-Jul-2023 07:19:07 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/thebh9p3/news4nation.in/cwt/process.php:12) in /home2/thebh9p3/news4nation.in/cwt/process.php on line 13

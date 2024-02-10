@@ -1,0 +1,47 @@
+.bloglistpage {
+    img {
+        width: 100%;
+        height: auto;
+    }
+    h2 {
+        font-size: 18px !important;
+        margin: 10px 0px 5px;
+    }
+}
+.recent-popular-post {
+    clear: both;
+    margin: 25px 0px;
+    img {
+        float: left;
+        width: 60px;
+        margin-right: 10px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    p {
+        font-weight: bold;
+        color: $secondary;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+.blogpage-title {
+    margin-bottom: 20px !important;
+}
+
+.post-shortcontent {
+    margin-bottom: 20px;
+    a {
+        border-radius: 4px;
+        background-color: $primary;
+        color: white;
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+    a:hover {
+        color: $web-white;
+        background-color: $secondary;
+    }
+    
+}
