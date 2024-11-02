@@ -1,11 +1,13 @@
 <?php if( get_sub_field( 'text-include' ) == 'Yes' ) :?>
-    <div class="container">
-        <div class="row">
-            <div class="colo-sm-12">
-                <?php if(!empty(get_sub_field('text'))): ?>
-                    <?php echo get_sub_field('text'); ?>
-                <?php endif; ?>
+   <section class="text-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <?php if(!empty(get_sub_field('text'))): ?>
+                        <?php echo get_sub_field('text'); ?>
+                    <?php endif; ?>
+                </div>
             </div>
-        </div>
-    </div> 
+        </div> 
+    </section>
 <?php endif; ?>

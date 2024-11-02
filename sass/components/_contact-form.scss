@@ -1,0 +1,191 @@
+/* Contact Section
+--------------------------------*/
+
+#contact {
+    padding: 50px 0;
+  }
+  
+  #contact .contact-info {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #contact .contact-info i {
+    font-size: 48px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #50d8af;
+  }
+  
+  #contact .contact-info address,
+  #contact .contact-info p {
+    margin-bottom: 0;
+    color: #000;
+  }
+  
+  #contact .contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #999;
+  }
+  
+  #contact .contact-info a {
+    color: #000;
+  }
+  
+  #contact .contact-info a:hover {
+    color: #50d8af;
+  }
+  
+  #contact .contact-address,
+  #contact .contact-phone,
+  #contact .contact-email {
+    margin-bottom: 20px;
+  }
+  
+  #contact #google-map {
+    height: 290px;
+    margin-bottom: 20px;
+  }
+  
+  #contact .form #sendmessage {
+    color: #50d8af;
+    border: 1px solid #50d8af;
+    display: none;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  #contact .form #errormessage {
+    color: red;
+    display: none;
+    border: 1px solid red;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  #contact .form #sendmessage.show,
+  #contact .form #errormessage.show,
+  #contact .form .show {
+    display: block;
+  }
+  
+  #contact .form .validation {
+    color: red;
+    display: none;
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  
+  #contact .form input,
+  #contact .form textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 15px;
+    border: 1px solid #8080805e;
+    margin-bottom: 13px;
+  }
+  .wpcf7-textarea {
+    height: 150px;
+  }
+  .wpcf7-submit {
+    transition: 0.4s;
+    border-radius: 4px !important;
+    background: $primary;
+    color: $web-white;
+    border: none;
+    cursor: pointer;
+  }
+  .wpcf7-submit:hover {
+    background: $secondary;
+  }
+  @media (min-width: 768px) {
+    #contact .contact-address,
+    #contact .contact-phone,
+    #contact .contact-email {
+      padding: 20px 0;
+    }
+  
+    #contact .contact-phone {
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+    }
+  }
+  .background-ovelay {
+    background: linear-gradient(75deg, rgba(54, 86, 116, 0.5882352941), rgba(166, 173, 29, 0.3490196078)), rgba(54, 86, 116, 0.5882352941) center center/cover no-repeat scroll;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    height: 100%;
+}  
+.form {
+	background: white;
+	padding: 20px;
+	width: 80%;
+	margin: 0px auto;
+	h2 {
+		text-align: center;
+	}
+	p {
+		text-align: center;
+	}
+}
+.wpcf7-not-valid-tip {
+    text-align: left;
+}
+.parallex-img {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}  
+
+#about .content h2 {
+    color: #0c2e8a;
+    font-weight: 700;
+    font-size: 36px;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  #about .content h3 {
+    color: #555;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    font-style: italic;
+  }
+  
+  #about .content p {
+    line-height: 26px;
+  }
+  
+  #about .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  #about .content i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #50d8af;
+  }
+  
+  #about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #about .content ul li {
+    padding-bottom: 10px;
+  }

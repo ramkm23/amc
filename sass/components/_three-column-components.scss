@@ -1,0 +1,38 @@
+.three-coloumn-components {
+    .box {
+        margin: 10px 0px;
+    }
+    img{
+        width: 100%;
+    }
+    
+    .comptitle {    
+        padding-bottom: 3px;
+        margin-bottom: 24px;
+        
+    }
+    h2 {
+        color: $primary;
+        span {
+            position: relative;
+        }
+        span::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100px;
+            height: 3px;
+            background:$secondary;
+            bottom: -5px;
+            left: 0;
+        }
+    }
+     
+    h3 {
+        margin: 15px 0px;
+    }
+   .btn {
+        margin: 20px 0px;
+    }
+
+}

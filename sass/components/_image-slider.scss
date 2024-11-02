@@ -1,0 +1,33 @@
+#image-slider {
+    padding: 30px 0;
+    margin-top: 30px;
+    background-color: $primary;
+    color: $web-white;
+    h2 {
+        color: $web-white;
+    }
+    img {
+        max-width: 90%;
+        opacity: 0.9;
+        transition: 0.3s;
+        padding: 15px 0;
+    }
+    img:hover {
+        opacity: 1;
+    }
+    .owl-nav, .owl-dots {
+        margin-top: 5px;
+        text-align: center;
+    }
+    .owl-dot {
+        display: inline-block;
+        margin: 0 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #ddd;
+    }
+    .owl-dot.active {
+        background-color: #50d8af;
+    }
+}

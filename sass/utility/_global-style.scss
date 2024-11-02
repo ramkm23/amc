@@ -21,12 +21,6 @@ section {
     margin-top: -6px;
 }
 
-body {
-  background: #fff;
-  color: #444 !important;
-  font-family: "Open Sans", sans-serif !important;
-}
-
 a {
   color: #50d8af;
   transition: 0.5s;
@@ -52,7 +46,7 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   margin: 0 0 20px 0;
   padding: 0;
 }
@@ -248,23 +242,30 @@ h6 {
   padding: 10px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #555;
+  color: $web-black;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   outline: none;
 }
-
+@media(min-width:768px)
+{
+.default-tepmlate
+{
+  margin-top:50px;
+}
+}
 .nav-menu li:hover > a,
 .nav-menu .menu-active > a {
-  color: #0a8f67;
+  color: $secondary;
 }
-
+  
 .nav-menu > li {
   margin-left: 10px;
 }
 
 .nav-menu ul {
+  text-align: left;
   margin: 4px 0 0 0;
   padding: 10px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
@@ -280,7 +281,7 @@ h6 {
   color: #333;
   transition: 0.3s;
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   text-transform: none;
 }
 
@@ -400,36 +401,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Sections
---------------------------------------------------------------*/
-
-/* Sections Header
---------------------------------*/
-
-.section-header {
-  margin-bottom: 30px;
-}
-
-.section-header h2 {
-  font-size: 32px;
-  color: #0c2e8a;
-  text-transform: capitalize;
-  font-weight: 700;
-  position: relative;
-  padding-bottom: 20px;
-}
-
-.section-header h2::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #50d8af;
-  bottom: 0;
-  left: 0;
-}
 
 .section-header p {
   padding: 0;
@@ -440,7 +411,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #about {
-  padding: 60px 0 30px 0;
+  padding: 40px 0 30px 0;
 }
 
 #about .about-img {
@@ -452,43 +423,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   max-width: 100%;
 }
 
-#about .content h2 {
-  color: #0c2e8a;
-  font-weight: 700;
-  font-size: 36px;
-  font-family: "Raleway", sans-serif;
-}
-
-#about .content h3 {
-  color: #555;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 26px;
-  font-style: italic;
-}
-
-#about .content p {
-  line-height: 26px;
-}
-
-#about .content p:last-child {
-  margin-bottom: 0;
-}
-
-#about .content i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #50d8af;
-}
-
-#about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-#about .content ul li {
-  padding-bottom: 10px;
-}
 
 /* Services Section
 --------------------------------*/
@@ -782,122 +716,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 2px;
 }
 
-/* Contact Section
---------------------------------*/
-
-#contact {
-  padding: 50px 0;
-}
-
-#contact .contact-info {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-#contact .contact-info i {
-  font-size: 48px;
-  display: inline-block;
-  margin-bottom: 10px;
-  color: #50d8af;
-}
-
-#contact .contact-info address,
-#contact .contact-info p {
-  margin-bottom: 0;
-  color: #000;
-}
-
-#contact .contact-info h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #999;
-}
-
-#contact .contact-info a {
-  color: #000;
-}
-
-#contact .contact-info a:hover {
-  color: #50d8af;
-}
-
-#contact .contact-address,
-#contact .contact-phone,
-#contact .contact-email {
-  margin-bottom: 20px;
-}
-
-#contact #google-map {
-  height: 290px;
-  margin-bottom: 20px;
-}
-
-#contact .form #sendmessage {
-  color: #50d8af;
-  border: 1px solid #50d8af;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#contact .form #errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#contact .form #sendmessage.show,
-#contact .form #errormessage.show,
-#contact .form .show {
-  display: block;
-}
-
-#contact .form .validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-#contact .form input,
-#contact .form textarea {
-  width: 100%;
-  padding: 10px 14px;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 15px;
-  border: 1px solid gray;
-}
-.wpcf7-textarea {
-  height: 150px;
-}
-.wpcf7-submit {
-  transition: 0.4s;
-  border-radius: 4px !important;
-  background: #081e5b;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-.wpcf7-submit:hover {
-  background: #0a8f67;
-}
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-
 #footer {
-  background: #000;
+  background:$web-black;
   color:white;
   padding: 20px 0px;
   font-size: 14px;
@@ -917,18 +741,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #0c2e8a;
 }
 
-@media (min-width: 768px) {
-  #contact .contact-address,
-  #contact .contact-phone,
-  #contact .contact-email {
-    padding: 20px 0;
-  }
-
-  #contact .contact-phone {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-  }
-}
 
 @media (min-width: 769px) {
   #call-to-action .cta-btn-container {
@@ -1021,9 +833,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 22px;
 }
 .footer-section {
-    background: #081e5b;
-    color: #c1bdbd;
+    background: $primary;
+    color: $web-white;
     padding: 20px 0px;
+    clear:both;
 }
 .footer-section a {
     font-size: 14px;
@@ -1034,35 +847,20 @@ body.mobile-nav-active #mobile-nav-toggle {
     color:white;
     font-family: fangsong;
     margin: 10px 0px;
+    font-size: 25px;
 }
 
 
 .footcont p {
     margin: 0px 0px 8px;
 }
-
-.form {
-    text-align: center;
-    background: white;
+@media(max-width:768px) {
+  ::before {
+    width: auto !important;
+  }
+  .text-section {
     padding: 20px;
-    margin: 20px;
 }
-
-.parallex-img {
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
 }
 
 
-.background-ovelay {
-    background: linear-gradient(75deg, rgba(54, 86, 116, 0.5882352941), rgba(166, 173, 29, 0.3490196078)), rgba(54, 86, 116, 0.5882352941) center center/cover no-repeat scroll;
-    position: absolute;
-    width: 100%;
-    top: 0px;
-    height: 100%;
-}

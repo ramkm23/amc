@@ -2,14 +2,28 @@
 # Intro Section
 --------------------------------------------------------------*/
 
+@media(min-width:768px) {
+    #intro .intro-content {
+        width: 60%;
+    }
+}
+@media (max-width:768px)
+{
+    #intro .intro-content {
+        padding: 0px 20px;
+    }  
+}
 #intro {
     padding: 0px;
+    margin: 0px auto;
     width: 100%;
     height: 60vh;
     position: relative;
     background: url("../img/intro-carousel/1.jpg") no-repeat;
     background-size: cover;
     .intro-content {
+        background: rgb(255 255 255 / 48%);
+        border-radius: 10px;
         position: absolute;
         bottom: 0;
         top: 0;
@@ -35,13 +49,17 @@
         flex-direction: column;
         text-align: center;
         h1 {
-            color: #0c2e8a;
-            margin-bottom: 30px;
-            font-size: 64px;
+            color:$primary;
+            font-size: 2.5rem;
             font-weight: 700;
         }
-        h2 span {
-            color: #0a8f67;
+        h2 {
+            font-weight: bold;
+            color: $web-black;
+        }
+        h3 {
+            font-weight: bold;
+            color: $web-black;
         }
         .btn-get-started, .btn-projects {
             font-family: "Raleway", sans-serif;
@@ -57,19 +75,19 @@
         }
         .btn-get-started {
             background: $primary;
-            border: 2px solid $primary;
+            border: 2px solid $web-white;
         }
         .btn-get-started:hover {
-            background: none;
-            color: $primary;
+            background: $secondary;
+            border: 2px solid $web-white;
         }
         .btn-projects {
             background: $secondary;
-            border: 2px solid #50d8af;
+            border: 2px solid $web-white;
         }
         .btn-projects:hover {
-            background: none;
-            color: #0a8f67;
+            background: $primary;
+            border: 2px solid $web-white;
         }
 
     }
@@ -78,7 +96,7 @@
     }
     #intro-carousel::before {
         content: '';
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgb(255 255 255 / 20%);
         position: absolute;
         height: 100%;
         width: 100%;
@@ -95,5 +113,12 @@
         background-position: center;
         background-repeat: no-repeat;
         transition-property: opacity;
+    }
+}
+
+@media (min-width:768px)
+{
+    .intro-content {
+        margin: 44px auto !important;
     }
 }

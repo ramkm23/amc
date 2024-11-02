@@ -26,12 +26,13 @@ $font-family-sans-serif: 'Lato',  sans-serif;
 
 body {
     //font-family: $body-font;
+    background: #fff;
+    font-family: "Open Sans", sans-serif !important;
     background-color: $web-white;
+    color: $web-black !important;
     font-weight: normal;
-    line-height: 30px;
-    background-image: url('http://thebharatnews.net/wp-content/uploads/2019/10/back.jpg');
-    //margin-top: 34px;
-    //font-feature-settings: "lnum";
+    line-height: 1.8em !important;
+    //background-image: url('http://thebharatnews.net/wp-content/uploads/2019/10/back.jpg');
     a {
         color:$web-black;   
     }
@@ -100,4 +101,18 @@ body {
     font-weight: 600;
     text-decoration: none;
     border-radius: 4px;
+}
+.btn {
+    background: $primary;
+    color: $web-white;
+}
+.btn:hover {
+    background: $secondary;
+    color: $web-white;
+}
+h2, h3 {
+    font-weight: bold !important;
+}
+h3{
+    font-size: 22px !important;
 }

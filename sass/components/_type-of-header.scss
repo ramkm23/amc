@@ -1,0 +1,33 @@
+.verticle-header {
+    text-align: center;
+    height: auto !important;
+    position: relative !important;
+    padding: 3px 0 0px !important;
+    background-color: #f3d12852 !important;
+    .vertical-header-logo
+    {
+        margin-top: auto;
+    }
+    .vertical-header-menu {
+        float: none !important;
+        background: $primary !important;
+        position: relative;
+        .nav-menu > li {
+            float: none;
+            display: inline-block;
+            a {
+                color: $web-white;
+            }
+            li a {
+                color: black;
+            }
+        }
+    }
+}
+@media(max-width:768px)
+{
+    .vertical-header-logo img {
+        max-height: 100% !important;
+        width: 100% !important;
+    }
+}
