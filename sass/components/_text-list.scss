@@ -1,0 +1,15 @@
+.titleheading
+{
+    color:$primary;
+    font-weight: bold;
+    text-align: center;
+}
+.titleheading::before {
+    content: "";
+    position: absolute;
+    width: 355px;
+    height: 3px;
+    background: #d3c165;
+    bottom: 2px;
+    margin-bottom: 0px;
+}   

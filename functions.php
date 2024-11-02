@@ -161,7 +161,11 @@ if( function_exists('acf_add_options_page') ) {
 		'menu_title' =>'Other Site Body Script',
 		'menu_slug' =>'other-site-body-script',
 	));
-    
+	acf_add_options_page(array(
+		'page_title' =>'Type of header',
+		'menu_title' =>'Type of header',
+		'menu_slug' =>'type-of-header',
+	));
 }
 
 
