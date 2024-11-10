@@ -7,7 +7,10 @@
             <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
             </div>
             <nav id="nav-menu-container">
-                <?php get_template_part( 'template-parts/menu-list' );?>
+                <?php 
+                   wp_nav_menu(array('theme_location' => 'my-custom-menu','menu_class' =>'nav-menu')); 
+                ?>
+                <?php// get_template_part( 'template-parts/menu-list' );?>
             </nav><!-- #nav-menu-container -->
         </div>
     </header>
